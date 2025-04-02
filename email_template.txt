@@ -1,0 +1,10 @@
+Bonjour,
+
+Voici le résultat de vos exercices PHP :
+
+Votre note finale est : {{note}} / 20
+
+Vous pouvez soumettre une nouvelle Pull Request pour améliorer votre score à tout moment.
+
+Bonne continuation,
+L'équipe pédagogique

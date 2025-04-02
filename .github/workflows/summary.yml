@@ -1,0 +1,16 @@
+name: Résumé des notes
+
+on:
+  workflow_dispatch:
+
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloner le dépôt
+        uses: actions/checkout@v4
+
+      - name: Générer le résumé
+        run: |
+          echo "Résumé des notes (mock)"
+          # Vous pouvez étendre ce script pour lire des fichiers de scores stockés dans le dépôt ou dans une base externe.

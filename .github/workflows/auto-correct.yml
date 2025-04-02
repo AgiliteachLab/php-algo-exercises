@@ -1,0 +1,21 @@
+name: Correction automatique
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloner le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Lancer la correction
+        run: php corrector.php
