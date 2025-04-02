@@ -6,6 +6,6 @@
 //   afficher i
 // fin
 
-for($i = 1; $i <= 10; $i++) {
-  echo $i . "<br>";
+ffor ($i = 1; $i <= 10; $i++) {
+  echo $i . "\\n";
 }
